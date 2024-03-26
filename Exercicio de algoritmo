@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+main () {
+	float saldo, rg,valor,numconta, opc;
+	
+	cout<<"digite o numero da conta"<<endl;
+	cin>>numconta;
+	
+	cout<<"digite seu rg:"<<endl;
+	cin>>rg;
+	
+	cout<<"digites seu saldo:"<<endl;
+	cin>>saldo;
+	
+	cout<< "infome a operacao, digite 1 para credito ou 2 debito";
+	cin>>opc;
+	
+	if (opc == 1 ) {
+	cout<<"informe o valor a ser creditado"<<endl;
+	cin>>valor;
+	cout<< saldo + valor; 
+	}
+	else
+  	 if (opc == 2) {
+  	 cout<<"informe o valor a ser debitado"<<endl;
+    cin>>valor;
+    cout<< saldo-valor;
+    }
+    
+}
